@@ -3,6 +3,6 @@
 
 - import_tasks: existing.yml
   when:
-    - netplan_remove_existing
+    - netplan_remove_existing|bool
 
 - import_tasks: configure.yml
