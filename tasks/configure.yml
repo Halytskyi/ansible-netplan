@@ -6,3 +6,4 @@
   become: true
   when: netplan_configuration != []
   notify: netplan generate config
+  register: netplan_configured
